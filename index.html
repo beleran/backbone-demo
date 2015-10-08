@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Backbone Boilerplate</title>
+
+    <!-- Application styles. -->
+    <!-- build:[href] /styles.min.css -->
+    <link rel="stylesheet" href="/app/styles/index.css">
+    <!-- /build -->
+</head>
+
+<body>
+    <!-- Application container. -->
+    <div id="header"></div>
+    <main role="main" id="main">
+
+    </main>
+    <!-- Application source. -->
+    <!-- build:[src] /source.min.js -->
+    <script data-main="/app/main" src="/vendor/bower/requirejs/require.js"></script>
+    <!-- /build -->
+    <script type="text/template" id="item-template" src="app/templates/item.html">
+        <div class="view">
+            <img class="item-image" src="<%- image %>" />
+            <div class="title"><%- title %></div>
+            <div class="description"><%- description %></div>
+        </div>
+    </script>
+    <script type="text/template" id="search-string" src="app/templates/searchString.html">
+        <div class="search-bar">
+            <input type="text" class="search-string" placeholder="Enter search string"/>
+            <div class="search-button">Go!</div>
+        </div>
+    </script>
+
+    <script type="text/template" id="search-list" src="app/templates/searchString.html">
+        <div id="result">
+            <ul id="search-result">
+
+            </ul>
+            <div class="controls">
+                <div class=".prevpage">Previous</div>
+                <div class=".nextpage">Next</div>
+            </div>
+        </div>
+    </script>
+</body>
+
+</html>

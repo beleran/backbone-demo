@@ -1,0 +1,26 @@
+.search-bar {
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #f5f5ff;
+    color: #001100;
+    width:100%;
+    height:60px;
+    padding:15px;
+    text-align: center;
+}
+
+.search-button {
+    display: inline-block;
+    background-color: #528CE0;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.search-string {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+    width: 300px;
+}
